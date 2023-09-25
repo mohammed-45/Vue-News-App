@@ -38,16 +38,7 @@ export default {
     sources: [],
     errors: [],
   }),
-  // computed: {
-  //   propModel: {
-  //     get() {
-  //       return this.prop;
-  //     },
-  //     set(drawer) {
-  //       this.$emit("update:prop", drawer);
-  //     },
-  //   },
-  // },
+
   created() {
     axios
       .get("https://newsapi.org/v2/sources?language=en&apiKey=" + this.api_key)
